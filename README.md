@@ -10,7 +10,7 @@ Amateur and professional data scientists who want to play with natural language 
 
 ## Objectives
 
-Attendees will have a tool capable of extracting useful information form 1000's of text files per minute on their laptop, such as authorship, topic, style, and language (both natural English, Spanish, etc or machine-readable python, html, etc). They will understand the advantages and disadvantages of several natural language processing approaches and how they can best be combined to create a text butler: regular expressions, frequency analysis, PCA/LSI, K-means, LDA, SVMs, and neural nets.
+Attendees will build a tool capable of extracting useful information form 1000's of text files per minute on their laptop. They will decode  authorship, topic, style, and language (e.g. English vs Spanish **and** python vs. javascript). They will understand the advantages and disadvantages of several natural language processing tools and how best to combine them into a useful natural language processing pipeline: regexes, bag-of-words, PCA/LSI, K-means, LDA, SVMs, word-vec, and neural nets.
 
 ## Detailed Abstract (needs work)
 
