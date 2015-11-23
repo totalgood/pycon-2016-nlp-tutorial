@@ -18,7 +18,7 @@ Participants will explore several practical applications of natural language pro
 
 A brute force word frequency analysis ("bag of words") approach will be pushed to its limit and then dimension reduction will be employed to stretch the scalability of this approach as far as it can go on a non-distributed environment (laptops). Semantic analysis will then be employed. A Word Net graph will be constructed, and augmented with proper nouns from the text. This augmented Word Net will then be used to calculate the similarity of word meanings to augment word frequency statistics. From this distance matrix and graph, participants will compute "factors" describing the sentiment of the documents and other latent characteristics. Participants will target subjects within those documents that interest them and discuss their results. Finally, participants will configure a chat bot plug-in to respond to natural language commands and queries and behave in surprisingly complex ways.
 
-## Outline
+## Outline (needs a lot of work to look feasible)
 
 1. (5 min) what is natural language 
     1. a system of utterances invented by humans "spontaneously" over millions of years.
