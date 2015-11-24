@@ -1,23 +1,5 @@
 # Making Connections with Natural Language Processing
 
-## Description
-
-Have you ever dreamed of using python to teach your computer to read documents, chats, and web pages and extract interesting information? Wouldn't you like your computer to find connections between documents or your friends profiles based on the meaning contained in the natural language text? What about classifying your writing according to topic, mood, and quality? This tutorial will teach you how to use python to do all this and create your own text butler.
-
-## Audience
-
-Amateur and professional data scientists who want to play with natural language processing and machine learning algorithms in python.
-
-## Objectives
-
-Attendees will have a tool capable of extracting useful information form 1000's of text files per minute on their laptop, such as authorship, topic, style, and language (both natural English, Spanish, etc or machine-readable python, html, etc). They will understand the advantages and disadvantages of several natural language processing approaches and how they can best be combined to create a text butler: regular expressions, frequency analysis, PCA/LSI, K-means, LDA, SVMs, and neural nets.
-
-## Detailed Abstract (needs work)
-
-Participants will explore several practical applications of natural language processing to interesting, personally-relevant problems. Participants will first use natural language processing to identify connections between Political Action Committees in Oregon based on their "cause" descriptions. They will then discover anomalies in those connections based on financial transaction data. The resulting pipeline will then be used to classify and index natural language text on the participant's laptops: e-mails, notes, word-documents, e-books, etc.
-
-A brute force word frequency analysis ("bag of words") approach will be pushed to its limit and then dimension reduction will be employed to stretch the scalability of this approach as far as it can go on a non-distributed environment (laptops). Semantic analysis will then be employed. A Word Net graph will be constructed, and augmented with proper nouns from the text. This augmented Word Net will then be used to calculate the similarity of word meanings to augment word frequency statistics. From this distance matrix and graph, participants will compute "factors" describing the sentiment of the documents and other latent characteristics. Participants will target subjects within those documents that interest them and discuss their results. Finally, participants will configure a chat bot plug-in to respond to natural language commands and queries and behave in surprisingly complex ways.
-
 ## Outline
 
 1. (5 min) what is natural language 
@@ -70,7 +52,7 @@ A brute force word frequency analysis ("bag of words") approach will be pushed t
         11. language ("taco" means something different in English than in Spanish)
         12. tribe/city/region ("Zoobombing" means something completely different in Portland than in a war zone)
         12. nation (culture)
-        13. planet (yes, projects like SETI are very concerned with NLP of ET languages)
+        13. planet (yes, projects like SETI are very concerned with NLP of ET languages)  
 5. (15 min) Getting Started (Setting up a Development Environment:
     1. OSX and Linux instructions for installing python and the packages listed above in the "Environment Preparation" section 
 6. (10 min) Coffee break
@@ -163,31 +145,31 @@ Example Material, much of which will be updated and incorporated into this tutor
 
 Example Visualizations after dimension reduction to only the 100 Highest Entropy Words
 
-The co-occurrence matrices for US Presidential Inaugural Speeches can be visulized as heat-maps and shuffled/sorted according to various criteria, like political party of the president, or year of speech:
+The co-occurrence matrices for US Presidential Inaugural Speeches can be visualized as heat-maps and shuffled/sorted according to various criteria, like political party of the president, or year of speech:
 [Word Co-Occurrence Matrix Visualization and Sorting](http://hobson.github.io/pug/pug/miner/static/word_cooccurrence.html)
 [Document Similarity Matrix Visualization and Sorting](http://hobson.github.io/pug/pug/miner/static/doc_cooccurrence.html)
 
 Can you guess what will happen if you produce a force-directed graph that includes both words and documents? The strength of connections between nodes (their attraction, or similarity, or inverse distance metric) is their cooccurrence frequency.
 [Graph Clustering of Words and Documents](http://hobson.github.io/pug/pug/miner/static/occurrence_force_graph.html)
 
-Can you guess the words that will be outliers (usage is independent of other words) in innaugural speeches?
+Can you guess the words that will be outliers (usage is independent of other words) in inaugural speeches?
 [Word Co-Occurrence Graph Clustering](http://hobson.github.io/pug/pug/miner/static/word_force_graph.html)
 
-Can you guess the presidential innaugural speeches that will be outliers when they are clustered according to word usage?
+Can you guess the presidential inaugural speeches that will be outliers when they are clustered according to word usage?
 [Document Similarity Graph Clustering](http://hobson.github.io/pug/pug/miner/static/doc_force_graph.htm)
 
 [Material previously-presented at a PDX-Python user-group meeting](http://hobson.github.io/pug/pug/docs/slidedeck-pdxpy/index.html#1)
 
 Example Visualizations of US Presidential Inaugural Speeches and their 100 Highest Entropy Words
 
-The co-occurrence matrices can be visulized as heat-maps and shuffled/sorted according to various criteria, like political party of the president for US innaugural speeces:
+The co-occurrence matrices can be visualized as heat-maps and shuffled/sorted according to various criteria, like political party of the president for US inaugural speeches:
 [Word Co-Occurrence Matrix Visualization and Sorting](http://hobson.github.io/pug/pug/miner/static/word_cooccurrence.html)
 [Document Similarity Matrix Visualization and Sorting](http://hobson.github.io/pug/pug/miner/static/doc_cooccurrence.html)
 
 Can you guess what will happen if you produce a force-directed graph that includes both words and documents? The strength of connections between nodes (their attraction) is their cooccurrence.
 [Graph Clustering of Words and Documents](http://hobson.github.io/pug/pug/miner/static/occurrence_force_graph.html)
 
-Can you guess the words that will be outliers (usage is independent of other words) in innaugural speeches?
+Can you guess the words that will be outliers (usage is independent of other words) in inaugural speeches?
 [Word Co-Occurrence Graph Clustering](http://hobson.github.io/pug/pug/miner/static/word_force_graph.html)
 
 
@@ -223,3 +205,37 @@ http://www.wagner.pp.ru/~vitus/software/catdoc/
 [Burke-doc]: http://davidmburke.com/2014/02/04/python-convert-documents-doc-docx-odt-pdf-to-plain-text-without-libreoffice/
 [Burke-odt]: http://davidmburke.com/2014/02/04/python-convert-documents-doc-docx-odt-pdf-to-plain-text-without-libreoffice/
 [Canny]: https://github.com/python-openxml/python-docx "Steve Canny's python-docx GitHub Repository"
+
+
+## Visualization
+
+### D3 Force-Directed-Graph
+
+A nice way to visualize connections in a small graph is with Mike Bostok's D3 Force-Directed Graph:
+
+This version allows you to add arrows for directional graphs too!
+
+http://www.coppelia.io/2014/07/an-a-to-z-of-extra-features-for-the-d3-force-layout/
+
+
+## Dimension Reduction
+
+### PCA
+
+### LDA
+
+PCA will sometimes produce exactly the **wrong** answer, choosing dimensions that maximize noise rather than discriminating the signal you are interested in (a discrete classification or continuous score).  LDA optimizes the separation between your classes or the dynamic range of your score, but that is only possible when you have a labeled training set. For the document pairing problem this requires a set of pairs of documents with labeled similarity (by a human or some other means approaching the "ideal" performance you want to achieve).
+
+Here's a diagram that shows how LDA works.
+
+<img src="FIXME://url/" alt="scatter plot for binary classification problem and PCA + LDA projection comparison">
+
+At Talentpair we've come up with a new approach that enables LDA on documents from different sources, with different context. We call this "Hierarchical Context-Partitioned Frequency Vectors," which is just a fancy way of saying that you create n-grams that start with the context-key for a nested mapping (python dict). So a the 1-gram token "fun" from a facebook profile 2 layers deep in your context hierarchy might be tagged with its context to create an 3-gram "social:fb:fun" while a WikiPedia article with the same word might become "reference:wikipedia:fun".  Of course this approach has the disadvantage of expanding your dimensions. It also prevents you from direclty making unsupervised matches across contexts (e.g. Facebook profiles paired up with famous people in Wikipedia articles). However, once you perform PCA you can often find unsupervised matches or clusters across domains. And this approach has the advantage of making supervised match learning possible with LDA to create combinations of dimensions across the contexts that  reduce the dimensions and generalize your model across domains. 
+
+But PCA and LDA would be required even without this context-tagging. or continuous scores  you can optimize your projections/eigenvectors for.
+
+http://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html#sklearn.manifold.TSNE
+
+D3 uses an efficient Barnes Hut algorithm which creates a heirarchy of clusters where force computations can be computed http://arborjs.org/docs/barnes-hut
+
+You can implement your own Barnes-Hut clustering algorithm as does the t-SNE to speed up slower techniques like scikit learns K-Means!
