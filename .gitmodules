@@ -1,0 +1,3 @@
+[submodule "jupyter/classical-nlp/ta"]
+	path = jupyter/classical-nlp/ta
+	url = git@github.com:totalgood/ta.git
