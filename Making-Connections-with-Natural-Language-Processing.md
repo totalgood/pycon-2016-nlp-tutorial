@@ -184,9 +184,9 @@ NLP tools all require ascii/unicode text to get started. So to convert from doc,
 
 Thank you Steve Canny for the only pure-python cross-platform [docx reader/writer][Canny]!
 
-### Closed formats are Trickier
+### Closed Format Binary Documents
 
-Wrap these tools with python or create pure python versions of them or just use pydocx to get it done.
+Microsoft and Apple makes it difficult for you to teach your machine to read your own documents, but it's still possible. Wrap these tools with python or create pure python versions of them or just use pydocx to get it done.
 
 Not all of these will work on Windows, so you linux users will be able to get at a bit more of your own text.
 
@@ -196,15 +196,6 @@ Not all of these will work on Windows, so you linux users will be able to get at
 [`antiword *.doc`][antiword]
 [`odt2txt *.odt`] [odt2txt]
 
-## References
-
-[Burke]: http://davidmburke.com/2014/02/04/python-convert-documents-doc-docx-odt-pdf-to-plain-text-without-libreoffice/
-http://superuser.com/questions/165978/how-to-extract-the-text-from-ms-office-documents-in-linux
-http://www.wagner.pp.ru/~vitus/software/catdoc/
-
-[Burke-doc]: http://davidmburke.com/2014/02/04/python-convert-documents-doc-docx-odt-pdf-to-plain-text-without-libreoffice/
-[Burke-odt]: http://davidmburke.com/2014/02/04/python-convert-documents-doc-docx-odt-pdf-to-plain-text-without-libreoffice/
-[Canny]: https://github.com/python-openxml/python-docx "Steve Canny's python-docx GitHub Repository"
 
 
 ## Visualization
@@ -239,3 +230,14 @@ http://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html#skle
 D3 uses an efficient Barnes Hut algorithm which creates a heirarchy of clusters where force computations can be computed http://arborjs.org/docs/barnes-hut
 
 You can implement your own Barnes-Hut clustering algorithm as does the t-SNE to speed up slower techniques like scikit learns K-Means!
+
+
+## References
+
+[Burke]: http://davidmburke.com/2014/02/04/python-convert-documents-doc-docx-odt-pdf-to-plain-text-without-libreoffice/
+http://superuser.com/questions/165978/how-to-extract-the-text-from-ms-office-documents-in-linux
+http://www.wagner.pp.ru/~vitus/software/catdoc/
+
+[Burke-doc]: http://davidmburke.com/2014/02/04/python-convert-documents-doc-docx-odt-pdf-to-plain-text-without-libreoffice/
+[Burke-odt]: http://davidmburke.com/2014/02/04/python-convert-documents-doc-docx-odt-pdf-to-plain-text-without-libreoffice/
+[Canny]: https://github.com/python-openxml/python-docx "Steve Canny's python-docx GitHub Repository"
