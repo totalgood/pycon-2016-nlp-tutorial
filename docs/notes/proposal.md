@@ -105,7 +105,16 @@ Attendees will mine the Twitter API and data sets downloaded as part of this wor
 
 As time permits we will answer questions and discuss how these techniques are being used for a state-of-the-art natural language pipeline employed at Talentpair. We use "Hierarchical Context-Partitioned Word Vectors" to match candidates seeking work (in the form of resumes) and opportunities offered by employers (in the form of position descriptions).
 
-### Additional Notes
+## More Info
+
+All material will be accompanied by iPython notebooks and provided in open-source (MIT-licensed) GitHub repositories. Data sets will be prepossessed and compressed to simplify participant environment setup. A sequence of git tags and branches  will provide an "answer key" for workshop activities for participants that have trouble keeping up.
+
+## Notes
 
 Both speakers have presented at PyCon in the past and Hobson has spoken about natural language processing on 5 previous occasions and have a track record of teaching novices to use natural language processing techniques in a short amount of time. Hobson served for years as a mentor for Georgia Institute of Technology grad students in Machine Learning and am currently mentoring [SlideRule](mysliderule.com) students. My presentations are very interactive and I try to engage participants individually throughout a tutorial or presentation by soliciting their ideas and provoking their critical thinking.
 
+## Speaker Bio
+
+Hobson has nearly two decades of engineering and teaching experience in robotics, autonomous systems, data science, and natural language processing. He has presented talks, papers, workshops, and semester-long classes in Physics, Mathematics, Robotics, Data Science, and Natural Language Processing. Over the past 5 years Hobson relies on Python as his language of choice for Data Science and Natural Language Processing for companies like Squishy Media, Building Energy, Sharp Labs, [Total Good](http://totalgood.com), [Hack Oregon](http://hackoregon.org), Pellego, Intel Labs, and [Talentpair](http://talentpair.com), as well as numerous open source projects.
+
+Hobson's detailed professional profile can be found on [Linked-In](https://www.linkedin.com/in/hobsonlane). His [github profile](github.com/hobson) shows some of his contribution to open source. Some of his recent talks are available at [hobsonlane.com/talks](http://hobsonlane.com/talks)
