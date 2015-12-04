@@ -63,7 +63,7 @@ Participants will develop a tweet natural language processing pipeline in three 
 
 Students will use the tools provided in the presentation to build a python function capable of processing 10's of thousands of tweets in a few minutes to produce meaningful clusters based on tweet content.
 
-### Feature Simplification (40 min)
+### Feature Reduction (40 min)
 
 - Feature Reduction
     - Calculating entropy (information value) with `numpy`
@@ -78,9 +78,9 @@ Students will use the tools provided in the presentation to build a python funct
     - `json.dumps` of TFIDF matrices for d3.js matrix visualizations
     - using python to manipulate nested dicts to create json required for interactive d3.js force-directed graphs 
 
-### Workshop (20 min)
+### Workshop: Feature Reduction (20 min)
 
-Attendees will use the tools provided to process and plot twitter tweets to find more informative clusters and patterns.
+Attendees will use the tools provided simplify the natural language feature set extracted from their twitter feeds. They will use scikit-learn to identify more informative clusters and patterns than was possible in the previous workshop.
 
 ### Supervised Learning (40 min)
 
@@ -97,11 +97,11 @@ Attendees will use the tools provided to process and plot twitter tweets to find
     - Linear Discriminant Analysis with `scikit-learn.LDA`
     - clustering using K-means in `scikit-learn` 
 
-### Workshop (20 min)
+### Workshop: Supervised Learning (20 min)
 
-Attendees will use the tools provided to process and plot twitter tweets and augment their pipeline to improve their prediction accuracy.
+Attendees will mine the Twitter API and data sets downloaded as part of this workshop to compute statistics that can be used as labels for twitter tweets. These labels will enable "supervised learning" which improves the feature selection and reduction performance producing more accurate impact performance predictions.
 
-### Discussion (30 min)
+### Wrap-Up and Discussion (30 min)
 
 As time permits we will answer questions and discuss how these techniques are being used for a state-of-the art natural language pipeline employed at Talentpair. We employ "Hierarchical Context-Partitioned Word Vectors" to match candidates seeking work (in the form of resumes) and opportunities offered by employers (in the form of role descriptions).
 
