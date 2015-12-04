@@ -24,14 +24,47 @@ Students will need iPython, NLTK, scipy, scikit-learn, and Pandas installed on t
 
 ### Overview
 
-Participants will develop a tweet natural language processing pipeline in three modules. The first section of the pipeline will be a natural language feature extractor and normalizer based on python builtins `collections`, `string`, and `re` combined with the powerful Pandas DataFrame data structure. The second section will be a module utilizing scikit-learn and numpy to simplify the feature set to a manageable number of features. It will find optimal combinations of reduced numbers of features that provide the greatest information about the subject matter of the tweets being processed. The final section of the pipeline will assemble a training set based on tweet statistics not contained in the natural language content of the tweets and combining this with the natural language features to cluster and classify tweets according to their popularity (number of favorites), and reach (number of potential viewers due to retweets). A neural net will be trained to predict tweet impact (popularity and reach) based on the time of day and day of week as well as the tweet text planned to be sent.
+Participants will develop a tweet natural language processing pipeline in three modules. The first section of the pipeline will be a natural language feature extractor and normalizer based on python builtins `collections`, `string`, and `re` combined with the powerful Pandas `DataFrame` data structure. The second section will utilize `scikit-learn` and `numpy` to simplify the feature set to a manageable number of features. It will find optimal combinations of reduced numbers of features that provide the greatest information about the subject matter of the tweets being processed. The final section of the pipeline will assemble a training set based on tweet statistics not contained in the natural language content of the tweets and combining this with the natural language features to cluster and classify tweets according to their popularity (number of favorites), and reach (number of potential viewers due to retweets). A neural net will be trained to predict tweet impact (popularity and reach) based on the time of day and day of week as well as the tweet text planned to be sent.
 
 
 ## Outline
 
-### Introduction
+### Introduction (10 min presentation)
 
-#### 30 min Presentation  to Language Manipulation (30 min)
+- Interesting NLP applications
+    - chatbots
+    - behavior modification
+    - natural language generation
+- state of the art NLP capabilities
+    - Google Now & Siri
+
+#### Language Manipulation with Python (30 min presentation)
+
+- `str.split` to quickly extract words from a tweet
+- `collections.Counter` to count word occurrences
+- Explore regular expressions in a text adventure
+    - Text Adventure games vs. Choose Your Own Adventure books
+    - Python Regular Expressions vs. Memoryless Regular Expressions 
+    - `re.split` to more accurately extract words (tokens)
+    - `nltk` stemmers
+    - `nltk` part-of-speech tagging
+    - `nltk` word root parsers
+    - `nltk` stop word filters
+- `pandas.Series` and `pandas.DataFrame`
+- `np.linalg.norm` and `np.dot` to efficiently normalize word counts and frequencies
+- `scipy.TFIDF` to efficiently store normalized word frequencies in a sparse matrix
+- `np.linalg.norm`, `np.dot` to compute "distances" between tweets
+- `scikit-learn` Clustering/grouping like tweets together 
+
+#### Feature Extraction Pipeline (20 min workshop)
+
+Students will use the tools provided in the presentation to build a python function capable of processing 10's of thousands of tweets in a few minutes to produce meaningful clusters based on tweet content.
+
+### Feature Simplification
+
+- Feature Reduction
+    - `scikit-learn.PCA` 
+
 
 1. [Introduction and Motivation](docs/notes/introduction.md)
     1. Applications
