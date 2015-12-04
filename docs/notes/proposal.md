@@ -18,7 +18,7 @@ Attendees will build a python module that can determine the best time of day to 
 
 Students that have written python scripts, modules, or a package and are familiar with the basic string manipulation and formatting capabilities built into python will have the necessary skill to complete this tutorial. In addition, any students who are familiar with linear algebra, and basic statistics concepts (like probability and variance) will be able to grasp the mathematics behind the tools assembled during the tutorial, but this is not required.
 
-### Environement Prerequisites
+### Environment Prerequisites
 
 Students will need ipython, NLTK, scipy, scikit-learn, and Pandas installed on their laptops to run all the examples (mostly ipython notebooks) in this tutorial and build the tweet impact predictor tool. Students can use pip to install the [requirements listed here](/requirements.txt). In addition students will need to install the python twitter api or download a 50 MB compressed file of tweets in order to train and test their tweet predictor.
 
@@ -26,40 +26,11 @@ Students will need ipython, NLTK, scipy, scikit-learn, and Pandas installed on t
 
 Participants will develop a tweet natural language processing pipeline in three modules. The first section of the pipeline will be a natural language feature extractor and normalizer based on python builtins `collections`, `string`, and `re` combined with the powerful Pandas DataFrame data structure. The second section will be a module utilizing scikit-learn and numpy to simplify the feature set to a manageable number of features. It will find optimal combinations of reduced numbers of features that provide the greatest information about the subject matter of the tweets being processed. The final section of the pipeline will assemble a training set based on tweet statistics not contained in the natural language content of the tweets and combining this with the natural language features to cluster and classify tweets according to their popularity (number of favorites), and reach (number of potential viewers due to retweets). A neural net will be trained to predict tweet impact (popularity and reach) based on the time of day and day of week as well as the tweet text planned to be sent.
 
+## Outline
 
-The tutorial will be divided into 5 sections.
+### Introduction
 
-  0. Introduction and Motivation
-  1. Classical Language Processing
-  2. Statistical Language Processing
-  3. An Application: Unsupervised Document Classification
-  4. An Application: Supervised Document Similarity Scoring
-
-#### 0. Introduction and Motivation
-
-Several recent breakthroughs and applications of Natural Language Processing will be described. The technologies required for each will be discussed briefly to motivate the technologies discussed at length in subsequent sections.
-
-#### 1. Classical Language Processing
-
-The first section will explain the types of languages that computers can process, natural and formal (and the Chomsky hierarchy). The mathematical models (regular expressions, finite state machines, state transition tables) used to process languages with a computer will be demonstrated using [iPython notebook examples](https://github.com/totalgood/pycon-2016-nlp-tutorial/blob/master/jupyter/classical-nlp/classical-nlp.ipynb). A simple Finite State Machine implementing a 'text adventure' video game (designed and largely implemented by a 9-yr old girl learning python) will be used as a tool to compare and contrast these languages and the models used to process them. This section will conclude with an explanation of the role these tools play in a modern natural language processing pipeline such as Google Now or Siri.
-
-#### 2. Statistical Language Processing
-
-A brute force word frequency analysis ("bag of words") approach will be pushed to its limits. Dimension reduction techniques (SVD, PCA, LSI. LDA) will be used to extend and generalize the performance of this statistical approach. Finally a hierarchical or scale-space approach to document processing will be demonstrated and students will learn how to extend their statistical models produce a more subtle and accurate characterization or scoring of documents.
-
-A Word Net graph will be constructed, and augmented with proper nouns from the text. This augmented Word Net will then be used to calculate the similarity of word meanings to augment word frequency statistics. From this distance matrix and graph, participants will compute "factors" describing the sentiment of the documents and other latent characteristics. Participants will target subjects within those documents that interest them and discuss their results. Finally, participants will configure a chat bot plug-in to respond to natural language commands and queries and behave in surprisingly complex ways.
-
-#### 3. Application: Unsupervised Document Clustering
-
-The natural language processing pipeline created in the previous sections will be used to preprocess and index a set of text documents on the participants' laptops (these can be downloaded using NLTK if no documents of interest already exist on a participant's laptop). Those that do not have documents they want to process on their laptops can follow along with the examples using the US Inaugural Speeches provided by NLTK and used for [the instructors examples](http://hobsonlane.com/pug/pug/docs/slidedeck-pdxpy/index.html#1). These preprocessed documents will be classified using SVD and K-means to identify themes and subject matter.
-
-The fundamental limitations of unsupervised dimension reduction and clustering will be explained using plots of the results from this example.
-
-#### 4. Application: Supervised Document Scoring and Pairing
-
-Participants will explore unstructured text descriptions of political action committees and use financial transaction data from these committees as labels for a supervised learning algorithm. LDA and Synthetic Annealing (Force-Directed Graphs) will be used to classify these text descriptions and [show connections](https://github.com/totalgood/hackor/tree/master/jupyter) between seemingly unrelated committees. Anomalies and trends will be shown in matplotlib and interactive D3 plots. These same algorithms will be applied to the participant-relevant text files utilized in the previous section (files on the participants laptops). Participants will encouraged to share with the group any interesting results they find for the documents they chose to model and mine.
-
-### Outline
+#### 30 min Presentation  to Language Manipulation (30 min)
 
 1. [Introduction and Motivation](docs/notes/introduction.md)
     1. Applications
