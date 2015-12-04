@@ -115,6 +115,8 @@ Both speakers have presented at PyCon in the past and Hobson has spoken about na
 
 ## Speaker Bio
 
-Hobson has nearly two decades of engineering and teaching experience in robotics, autonomous systems, data science, and natural language processing. He has presented talks, papers, workshops, and semester-long classes in Physics, Mathematics, Robotics, Data Science, and Natural Language Processing. Over the past 5 years Hobson relies on Python as his language of choice for Data Science and Natural Language Processing for companies like Squishy Media, Building Energy, Sharp Labs, [Total Good](http://totalgood.com), [Hack Oregon](http://hackoregon.org), Pellego, Intel Labs, and [Talentpair](http://talentpair.com), as well as numerous open source projects.
+Hobson has nearly two decades of engineering and teaching experience in robotics, autonomous systems, data science, and natural language processing. Hobson has relied on Python as his language of choice for Data Science and Natural Language Processing for companies like Squishy Media, Building Energy, Sharp Labs, [Total Good](http://totalgood.com), [Hack Oregon](http://hackoregon.org), Pellego, Intel Labs, and [Talentpair](http://talentpair.com), as well as numerous open source projects.
 
-Hobson's detailed professional profile can be found on [Linked-In](https://www.linkedin.com/in/hobsonlane). His [github profile](github.com/hobson) shows some of his contribution to open source. Some of his recent talks are available at [hobsonlane.com/talks](http://hobsonlane.com/talks)
+- Professional profile on [Linked-In](https://www.linkedin.com/in/hobsonlane)
+- [GitHub profile](http://github.com/hobson/) with some open source contributions
+- Recent talks at [hobsonlane.com/talks](http://hobsonlane.com/talks)
