@@ -18,14 +18,21 @@ Attendees will build a python module that can determine the best time of day to 
 
 Students that have written python scripts, modules, or a package and are familiar with the basic string manipulation and formatting capabilities built into python will have the necessary skill to complete this tutorial. In addition, any students who are familiar with linear algebra, and basic statistics concepts (like probability and variance) will be able to grasp the mathematics behind the tools assembled during the tutorial, but this is not required.
 
+Also, familiarity with scikit.learn and pandas would be helpful, but not necessary.
+
 ### Python Development Environment
 
 Students will need iPython, NLTK, scipy, scikit-learn, and Pandas installed on their laptops to run the examples in this tutorial and build the tweet impact predictor tool. Students can use pip to install the [requirements listed here](/requirements.txt). In addition students will need to install the python twitter api or download a 50 MB compressed file of tweets in order to train and test their tweet predictor.
 
 ### Overview
 
-Participants will develop a tweet natural language processing pipeline in three modules. The first section of the pipeline will be a natural language feature extractor and normalizer based on python builtins `collections`, `string`, and `re` combined with the powerful Pandas `DataFrame` data structure. The second section will utilize `scikit-learn` and `numpy` to simplify the feature set to a manageable number of features. It will find optimal combinations of reduced numbers of features that provide the greatest information about the subject matter of the tweets being processed. The final section of the pipeline will assemble a training set based on tweet statistics not contained in the natural language content of the tweets and combining this with the natural language features to cluster and classify tweets according to their popularity (number of favorites), and reach (number of potential viewers due to retweets). A neural net will be trained to predict tweet impact (popularity and reach) based on the time of day and day of week as well as the tweet text planned to be sent.
+Participants will develop a natural language processing pipeline for tweets in three modules. 
 
+The first section of the pipeline will be a natural language feature extractor and normalizer based on python builtin modules combined with the powerful Pandas `DataFrame` data structure. 
+
+The second section will utilize `scikit-learn` and `numpy` to simplify the feature set to a manageable number of features. It will find optimal combinations of reduced numbers of features that provide the greatest information about the subject matter of the tweets being processed. 
+
+The final section of the pipeline will assemble a training set based on tweet statistics not contained in the natural language content of the tweets and combining this with the natural language features to cluster and classify tweets according to their popularity (number of favorites), and reach (number of potential viewers due to retweets). A neural net will be trained to predict tweet impact (popularity and reach) based on the time of day and day of week as well as the tweet text planned to be sent.
 
 ## Outline
 
@@ -105,13 +112,15 @@ Attendees will mine the Twitter API and data sets downloaded as part of this wor
 
 As time permits we will answer questions and discuss how these techniques are being used for a state-of-the-art natural language pipeline employed at Talentpair. We use "Hierarchical Context-Partitioned Word Vectors" to match candidates seeking work (in the form of resumes) and opportunities offered by employers (in the form of position descriptions).
 
+We will also talk about where to go from here, further advanced techniques and resources for students to explore on their own.
+
 ## More Info
 
-All material will be accompanied by iPython notebooks and provided in open-source (MIT-licensed) GitHub repositories. Data sets will be prepossessed and compressed to simplify participant environment setup. A sequence of git tags and branches  will provide an "answer key" for workshop activities for participants that have trouble keeping up.
+All material will be accompanied by iPython notebooks and provided in open-source (MIT-licensed) GitHub repositories. Data sets will be prepossessed and compressed to simplify participant environment setup. A sequence of git tags and branches  will provide an "answer key" for workshop activities, to allow students to continue moving forward.
 
-## Notes
+### Additional Notes
 
-Both speakers have presented at PyCon in the past and Hobson has spoken about natural language processing on 5 previous occasions and have a track record of teaching novices to use natural language processing techniques in a short amount of time. Hobson served for years as a mentor for Georgia Institute of Technology grad students in Machine Learning and am currently mentoring [SlideRule](mysliderule.com) students. My presentations are very interactive and I try to engage participants individually throughout a tutorial or presentation by soliciting their ideas and provoking their critical thinking.
+Hobson Lane has spoken about natural language processing on 5 previous occasions and have a track record of teaching novices to use natural language processing techniques in a short amount of time. Hobson served for years as a mentor for Georgia Institute of Technology grad students in Machine Learning and am currently mentoring [SlideRule](mysliderule.com) students. Hobson has an engaging presentation style and invokes insightful dialog to promote critical thinking.
 
 ## Speaker Bio
 
@@ -120,3 +129,6 @@ Hobson has nearly two decades of engineering and teaching experience in robotics
 - Professional profile on [Linked-In](https://www.linkedin.com/in/hobsonlane)
 - [GitHub profile](http://github.com/hobson/) with some open source contributions
 - Recent talks at [hobsonlane.com/talks](http://hobsonlane.com/talks)
+
+Rob Ludwick was introduced to python by a friend and was never the same after.  He's worked for large and small companies in the past, and most recently with Talentpair, where he enjoys the process of matching employees to jobs.
+
