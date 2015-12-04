@@ -1,12 +1,12 @@
-# Making Connections with Natural Language Processing
+# Making an Impact with Python Natural Language Processing Tools
 
 ## Description
 
-Have you ever felt like your tweets were falling on deaf ears? Have you wished you could predict how well your tweets would do before you hit send and adjust the timing and content of your tweets to improve them? Now you can! Several Python packages for machine learning and natural language processing have reached "critical mass" and can now be combined to perform these and other powerful natural language processing tasks. This tutorial will teach you how.
+Do your tweets get lost in the shuffle? Would you like to predict a tweet's impact before you hit send? Python now has all the tools to make this possible. Several Python packages for machine learning and natural language processing have reached "critical mass" and can now be combined to perform these and other powerful natural language processing tasks. This tutorial will teach you how.
 
 ## Audience
 
-Amateur and professional data scientists who want to become familiar with the state-of-the-art natural language processing tools that python has to offer.
+Amateur and professional data scientists who want to learn about a powerful combination of python tools and techniques for natural language processing
 
 ## Objectives
 
@@ -14,17 +14,18 @@ Attendees will build a python module that can determine the best time of day to 
 
 ## Detailed Abstract
 
-### Experience Prerequisites
+### Prerequisites
 
 Students that have written python scripts, modules, or a package and are familiar with the basic string manipulation and formatting capabilities built into python will have the necessary skill to complete this tutorial. In addition, any students who are familiar with linear algebra, and basic statistics concepts (like probability and variance) will be able to grasp the mathematics behind the tools assembled during the tutorial, but this is not required.
 
-### Environment Prerequisites
+### Python Development Environment
 
-Students will need ipython, NLTK, scipy, scikit-learn, and Pandas installed on their laptops to run all the examples (mostly ipython notebooks) in this tutorial and build the tweet impact predictor tool. Students can use pip to install the [requirements listed here](/requirements.txt). In addition students will need to install the python twitter api or download a 50 MB compressed file of tweets in order to train and test their tweet predictor.
+Students will need iPython, NLTK, scipy, scikit-learn, and Pandas installed on their laptops to run the examples in this tutorial and build the tweet impact predictor tool. Students can use pip to install the [requirements listed here](/requirements.txt). In addition students will need to install the python twitter api or download a 50 MB compressed file of tweets in order to train and test their tweet predictor.
 
 ### Overview
 
 Participants will develop a tweet natural language processing pipeline in three modules. The first section of the pipeline will be a natural language feature extractor and normalizer based on python builtins `collections`, `string`, and `re` combined with the powerful Pandas DataFrame data structure. The second section will be a module utilizing scikit-learn and numpy to simplify the feature set to a manageable number of features. It will find optimal combinations of reduced numbers of features that provide the greatest information about the subject matter of the tweets being processed. The final section of the pipeline will assemble a training set based on tweet statistics not contained in the natural language content of the tweets and combining this with the natural language features to cluster and classify tweets according to their popularity (number of favorites), and reach (number of potential viewers due to retweets). A neural net will be trained to predict tweet impact (popularity and reach) based on the time of day and day of week as well as the tweet text planned to be sent.
+
 
 ## Outline
 
