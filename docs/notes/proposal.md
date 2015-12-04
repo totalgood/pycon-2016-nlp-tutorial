@@ -2,25 +2,30 @@
 
 ## Description
 
-Do you dream of teaching your computer to read documents and extract information? Would you like to use Python to find connections between text documents on your laptop or tweets on twitter? What about classifying your own writing according to topic, mood, and quality? This tutorial will show you how to build a personal text butler to uncover patterns and trends in natural language text.
+Have you ever felt like your tweets were falling on deaf ears? Have you wished you could predict how well your tweets would do before you hit send and adjust the timing and content of your tweets to improve them? Now you can! Several Python packages for machine learning and natural language processing have reached "critical mass" and can now be combined to perform these and other powerful natural language processing tasks. This tutorial will teach you how.
 
 ## Audience
 
-Amateur and professional data scientists who want to play with natural language processing and machine learning algorithms in python.
+Amateur and professional data scientists who want to become familiar with the state-of-the-art natural language processing tools that python has to offer.
 
 ## Objectives
 
-Attendees will build a tool capable of extracting  information from text files on their laptop. The tool will be able to classify by authorship, topic and style. In the process of building and training this tool, attendees will gain a practical understanding of the state of the art for NLP, including the technologies behind Siri and Google Now: regexes, bag-of-words, scale-space processing, PCA/LSI, K-means, LDA, SVMs, word2vec, and neural nets.
+Attendees will build a python module that can determine the best time of day to tweet on a particular subject. While building this tool, attendees will become familiar with the most powerful combination of python packages for performing state-of-the-art natural language processing.
 
 ## Detailed Abstract
 
-### Prerequisites
+### Experience Prerequisites
 
-Students that have built a few python scripts or modules from scratch and have done some file or string processing (search and replace, word counts, regular expressions) will be able to keep up with the pace of the examples in this tutorial. Students familiar with basic statistics concepts like probability distributions, histograms, and perhaps word frequency will have not difficulty following the explanations of the math behind the examples used in this tutorial.
+Students that have written python scripts, modules, or a package and are familiar with the basic string manipulation and formatting capabilities built into python will have the necessary skill to complete this tutorial. In addition, any students who are familiar with linear algebra, and basic statistics concepts (like probability and variance) will be able to grasp the mathematics behind the tools assembled during the tutorial, but this is not required.
 
-Students will need ipython, NLTK, scipy, scikit-learn, and Pandas installed on their laptop to run all the examples (mostly ipython notebooks) in this tutorial. Students can use pip to install the [requirements here](/requirements.txt). If the user does not have 100 or more text files they would like to analyze then they should use NLTK to download a corpus of documents of interest to them, such as the US President Inaugural Speeches. iPython notebooks that use this NLTK corpus or a folder containing text files on a laptop will both be provided. 
+### Environement Prerequisites
+
+Students will need ipython, NLTK, scipy, scikit-learn, and Pandas installed on their laptops to run all the examples (mostly ipython notebooks) in this tutorial and build the tweet impact predictor tool. Students can use pip to install the [requirements listed here](/requirements.txt). In addition students will need to install the python twitter api or download a 50 MB compressed file of tweets in order to train and test their tweet predictor.
 
 ### Overview
+
+Participants will develop a tweet natural language processing pipeline in three modules. The first section of the pipeline will be a natural language feature extractor and normalizer based on python builtins `collections`, `string`, and `re` combined with the powerful Pandas DataFrame data structure. The second section will be a module utilizing scikit-learn and numpy to simplify the feature set to a manageable number of features. It will find optimal combinations of reduced numbers of features that provide the greatest information about the subject matter of the tweets being processed. The final section of the pipeline will assemble a training set based on tweet statistics not contained in the natural language content of the tweets and combining this with the natural language features to cluster and classify tweets according to their popularity (number of favorites), and reach (number of potential viewers due to retweets). A neural net will be trained to predict tweet impact (popularity and reach) based on the time of day and day of week as well as the tweet text planned to be sent.
+
 
 The tutorial will be divided into 5 sections.
 
