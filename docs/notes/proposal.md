@@ -103,7 +103,7 @@ Attendees will mine the Twitter API and data sets downloaded as part of this wor
 
 ### Wrap-Up and Discussion (30 min)
 
-As time permits we will answer questions and discuss how these techniques are being used for a state-of-the art natural language pipeline employed at Talentpair. We employ "Hierarchical Context-Partitioned Word Vectors" to match candidates seeking work (in the form of resumes) and opportunities offered by employers (in the form of role descriptions).
+As time permits we will answer questions and discuss how these techniques are being used for a state-of-the-art natural language pipeline employed at Talentpair. We use "Hierarchical Context-Partitioned Word Vectors" to match candidates seeking work (in the form of resumes) and opportunities offered by employers (in the form of position descriptions).
 
 ### Additional Notes
 
