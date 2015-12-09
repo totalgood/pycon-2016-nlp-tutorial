@@ -29,7 +29,7 @@
 - Invertible PrettyDict, FuzzyDict, PrettyCount, PrettyFuzzyDict with pull requests to collections on core 
     - simplified C-implementation of fuzzywuzzy and levenshtein?
     - use builtin re package?
-    test in pug-nlp first
+    - test in pug-nlp first
 - AutoCoder for regexes
 
 ## Lightning Talk Ideas
