@@ -49,15 +49,13 @@ Finally an Advanced section will provide attendees with the tools and resources 
 ### Introduction (15 min)
 
 - Logistics (restrooms, WiFi, classroom etiquette)
-- Agenda & Schedule
+- Agenda & Schedule (4 sessions, 4 workshops)
 - Interesting NLP applications
-    - MMORPG Troll-police chatbots for behavior modification
-    - Sports and Finiancial newsreporting natural language generation
-- state of the art NLP capabilities
-    - skip-grams and Word-Vector math
+    - Behavior modification with MMORPG Troll-police
+    - Sports and Financial news natural language generation
+- State of the art NLP
+    - `gensim` word vector math
         - teaser: "king" - "man" + "woman" = "queen"
-    - Google Now & Siri
-        - description of pipeline (we will build some elements here)
 
 ### Feature Extraction with Python (30 min)
 
