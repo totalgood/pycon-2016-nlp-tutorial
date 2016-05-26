@@ -31,3 +31,8 @@ seaborn==0.7.0
 # # for a webapp
 # django==1.9
 # django-extensions==1.5.9
+
+# PyCon 2016 Portland, OR
+# "Making an Impact with Python NLP Tools"
+# Tweet Impact Predictor
+twip>=0.0.10
