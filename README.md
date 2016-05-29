@@ -1,6 +1,8 @@
-# Making Connections with Natural Language Processing
+# Making an Impact with Python NLP Tools
 
-This repository holds Work-In-Progress material intended for a PyCon 2016 NLP Tutorial based on [this proposal](docs/notes/proposal.md).
+This is the PyCon 2016 NLP Tutorial on building a [Tweet Impact Predictor](//github.com/totalgood/twip).
+
+Head over to the [twip](//github.com/totalgood/twip) repository and fork/clone it to get started.
 
 ### [Description](docs/notes/proposal.md#description)
 
